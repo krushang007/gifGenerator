@@ -23,9 +23,12 @@ const useGif = (tag) => {
       setLoader(false);
     }
   }
+  /* eslint-disable */
+
   useEffect(() => {
-    getMeme();
-  }, []);
+    getMeme(tag);
+  },[]);
+/* eslint-enable */
 
 
   return { loader, gif, getMeme };

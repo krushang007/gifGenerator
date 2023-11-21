@@ -3,7 +3,7 @@ import useGif from '../hooks/useGif';
 
 const Random = () => {
     const {gif,loader,getMeme}=useGif();
-   
+  
   return (
     <div className='w-5/6 lg:w-1/2  bg-green-300 rounded-3xl border-[5px] border-green-600'>
         <div className='flex flex-col gap-4 p-5 w-full rounded-3xl items-center'>
