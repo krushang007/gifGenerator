@@ -3,8 +3,8 @@ import Spinner from './Spinner';
 import useGif from '../hooks/useGif';
 
 const Tag = () => {
-    const {gif,loader,getMeme}=useGif();
     const[tag,setTag]=useState('car');
+    const {gif,loader,getMeme}=useGif(tag);
   return (
     <div className='w-5/6 lg:w-1/2  bg-red-300 mb-8 rounded-3xl border-[5px] border-red-600'>
         <div className='flex flex-col gap-4 p-5 w-full rounded-3xl items-center'>
